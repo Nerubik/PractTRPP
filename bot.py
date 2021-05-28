@@ -13,7 +13,7 @@ def start(message):
 	btn3 = types.KeyboardButton('Веб разработка')
 	btn4 = types.KeyboardButton('Софт для компьютеров')
 	btn5 = types.KeyboardButton('Обработка данных')
-	btn6 = types.KeyboardButton('Создание ИИ')
+	btn6 = types.KeyboardButton('Разработка для ИИ')
 	markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
 	send_mess = f"<b>Привет {message.from_user.first_name} {message.from_user.last_name}</b>!\nКакое направление тебя интересует?"
 	bot.send_message(message.chat.id, send_mess, parse_mode='html', reply_markup=markup)
